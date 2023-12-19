@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Penxil</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<header>
+    <h1 data-text="hello">penxil</h1>
+</header>
+<body>
+  <div class="editor">
+    <div class="code-area">
+      <textarea id="htmlCode" placeholder="HTML code"></textarea>
+      <textarea id="cssCode" placeholder="CSS code"></textarea>
+      <textarea id="jsCode" placeholder="JavaScript code"></textarea>
+    </div>
+    <div class="buttons">
+      <button onclick="runCode()">Run</button>
+      <button onclick="copyCode()">Copy</button>
+    </div>
+  </div>
+  <div class="output">
+    <div class="mac-output">
+        <div class="mac-dots"></div>
+      <iframe id="output"></iframe>
+    </div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
